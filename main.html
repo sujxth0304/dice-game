@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Dice Roll</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="dice-container" id="diceContainer">
+            <h1>Dice</h1>
+            <div class="dice-grid" id="diceGrid">
+                <!-- Dice sections will be dynamically added here -->
+            </div>
+        </div>
+        <div class="score-container">
+            <h1>Scores</h1>
+            <div id="scoreBoard"></div>
+        </div>
+        <div class="round-scores-container">
+            <h1>Round Scores</h1>
+            <div id="roundScores"></div>
+        </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Congratulations!</h2>
+            <p id="winnerMessage"></p>
+            <img src="/images/trophy.svg" class="trophy">
+        </div>
+    </div>
+    
+    <canvas id="confetti"></canvas>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</body>
+</html>

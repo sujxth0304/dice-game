@@ -1,0 +1,88 @@
+@keyframes backgroundColorChange {
+    0% { background-color: #76a4a5; }
+    33% { background-color: #32a49a; }
+    66% { background-color: #7491c3; }
+    100% { background-color: #69dcac; }
+}
+
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes textShadowPulse {
+    0% { text-shadow: 0 0 18px rgba(0,0,0,0.1); }
+    50% { text-shadow: 0 0 28px rgba(0,0,0,0.3); }
+    100% { text-shadow: 0 0 18px rgba(0,0,0,0.1); }
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 30px 0;
+    animation: backgroundColorChange 15s infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    font-size: 6rem;
+    color: #2C3333;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    animation: textShadowPulse 2s infinite;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #343c52;
+    margin-bottom: 20px;
+}
+
+.dice {
+    width: 260px;
+    display: block;
+    margin: 30px auto;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+#playerSelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #2C3333;
+    border-radius: 5px;
+    background-color: #E7F6F2;
+    color: #2C3333;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.start {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #395B64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.start:hover {
+    background-color: #2C3333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
