@@ -10,8 +10,7 @@ The Multiplayer Dice Game is an interactive game where multiple players can roll
 
 ## 🛠️ Technologies Used
 - **Javascript** 
-- **Streamlit** 
-- **WebSockets** 
+- **Streamlit**  
 
 ## 📥 Installation
 1. Clone the repository:
