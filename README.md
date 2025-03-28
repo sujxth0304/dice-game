@@ -9,27 +9,8 @@ The Multiplayer Dice Game is an interactive game where multiple players can roll
 - 🛠️ Built as a chatbot plugin for easy integration
 
 ## 🛠️ Technologies Used
-- **Javascript** 
-- **Streamlit**  
-
-## 📥 Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/sujxth0304/dice-game.git
-   cd dice-game
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```sh
-   python app.py
-   ```
-   or if using Streamlit:
-   ```sh
-   streamlit run app.py
-   ```
+- **Javascript** for game logic 
+- **HTML and CSS** for UI  
 
 ## 🎲 How to Play
 1. Choose number of players (upto 4) and start the game.
